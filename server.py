@@ -23,9 +23,6 @@ def get_code():
         data = request.get_json()
         client_key = data['key']
 
-        # Generate server-generated code
-        code_to_execute = ""
-
         with open("your_text_file.py", "r") as file:
             code_to_execute = file.read()
         # Derive a key from the client's key
